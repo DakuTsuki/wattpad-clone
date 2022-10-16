@@ -1,0 +1,419 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+header{
+  display:flex;
+}
+.wattpad-header{
+  display: flex;
+}
+.wattpad-logo{
+  margin-top: 14px;
+  margin-left: 86px;
+}
+.wattpad-logo img{
+  width:119px;
+ }.wattpad-header-list ul{
+  display: flex;
+  justify-content: space-between;
+  width: 22rem;
+  align-items: center;
+}
+.wattpad-header-list li{
+  list-style: none;
+}
+.wattpad-header-list select{
+  border: none;
+  width: 188px;
+  font-size: 16px;
+  margin-left: 11px;
+  font-weight:bold;
+}
+.wattpad-header-list #Browse{
+  border: none;
+  width: 96px;
+}
+.wattpad-header-list #community{
+  width: 111px;
+} 
+/* .Browse{
+  
+}
+.drop-down{
+  display: none;
+}
+.Browse:hover +.drop-down{
+  display:grid;
+} */
+input{
+  border: none;
+    /* font-weight: 900; */
+    font-size: 17px;
+    outline: 0;
+    color: #222;
+}
+.wattpad-header-list a{
+  text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-left:29px;
+}
+.wattpad-login{
+  position: absolute;
+  left: 79rem;
+  top: 14px;
+  display: flex;
+  align-items: center;
+}
+.wattpad-login a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+.wattpad-login select{
+
+  border: none;
+  /* width: 188px; */
+  font-size: 17px;
+  margin-left: 11px;
+  font-weight: bold;
+}
+#image{
+ background-image: url(./topRightPortal.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 100px 0 40px;
+  background-size: auto 100%;
+}
+.wattpad-middle{
+  display: flex;
+  justify-content: space-between;
+  width: 88rem;
+ 
+}
+.wattpad-mid-flank h2{
+  margin-left: 7rem;
+  margin-top: 7rem;
+  font-size: 57px;
+  color: #ff7d00;
+} 
+h2{
+  font-family: DinRounded,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.wattpad-mid-flank h3{
+  font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 7rem;
+    font-size: 25px;
+    margin-bottom: 40px
+}
+.wattpad-mid-flank h4{
+  font-size: 20px;
+  margin-left: 7rem;
+  font-weight: 400;
+  margin-bottom: 47px;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+.wattpad-mid-flank .btn-start-reading{
+  margin-left: 7rem;
+    color: white;
+    background: #ff5500;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    border: none;
+    /* border-radius: 6px; */
+    border-radius: 7px;
+    font-size: 18px;
+}
+#start-writing{
+  margin-left: 33px;
+}
+.hero-devices{
+  display: flex;
+  margin-top: 13rem;
+  /* width: 0;*/
+}
+.hero-devices img{
+  width: 43rem;
+  height:23rem;
+}
+#see-stories{
+  background-image: url(./bottomLeftPortal.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size:16rem;
+}
+.story{
+  padding-top: 25px;
+}
+.story h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 44rem
+}
+#item-container{
+  margin-left: 12rem;
+  display: flex;
+  justify-content: space-between;
+  width: 64rem;
+}
+#item{
+  display:flex;
+}
+#item-container img{
+  /* display: flex; */
+  margin-left:120px;
+  width: 32px;  
+}
+#item-container p{
+  font-weight: bold;
+  font-size: 20px;
+}
+#puslished img{
+  margin-left:3rem;
+}
+.wattpadContents{
+display:flex;
+margin-top:38px;
+}
+.WattpadStudiosPoster{
+  margin-left: 13rem;
+  margin-top: 5rem;
+}
+.WattpadStudiosPoster img{
+  width: 445px;
+}
+.studioslogo{
+margin-top: 5rem;
+width:38rem;
+}
+.studioslogo img{
+  width:17rem;
+  
+}
+.studioslogo h3{
+  /* letter-spacing: 1px; */
+    font-weight: 700;
+    font-size: 27px;
+    margin-top:29px;
+    font-family: DinRounded,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.studioslogo p{
+  width: 28rem;
+  font-size: 19px;
+  color: #515050;
+  font-family: DinRounded,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 13px;
+}
+#workd{
+  font-size:20px;
+}
+#panda{
+width:3rem;
+vertical-align: middle;
+}
+#gee{
+  width: 4rem;
+    margin-left: 63px;
+}
+#cypher{
+  width: 4rem;
+  margin-left: 56px;
+}
+.wattpadContent-1{
+  display: flex;
+    justify-content: space-between;
+    width: 71rem;
+}
+.bookshelves{
+  margin-left: 14rem;
+  margin-top: 16rem;
+  text-align: end;
+}
+.bookshelves img{
+  width: 14rem;
+}
+.bookshelves h3{
+  font-weight: 700;
+    font-size: 24px;
+    margin-left: -57px;
+    font-family: DinRounded,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+.bookshelves p{
+  width: 31rem;
+  /* margin-left: 49rem; */
+  color: #5a5656;
+  font-size: 22px;
+}
+#surroundings{
+  width:7rem;
+  margin-left: 48px;
+}
+.booksPoster{
+  margin-top: 14rem;
+}
+.booksPoster img{
+  width: 23rem;
+}
+.writers{
+  text-align: center;
+  margin-top: 119px;
+  text-decoration: underline;
+}
+.writers p{
+  font-size: 23px;
+}
+.wattpadWorks{
+  text-align: center;
+  margin-top: 100px;
+  background-color: #fafafa;
+}
+.wattpadWorks h3{
+  font-size: 24px;
+ 
+}
+#fact{
+  display:flex;
+  margin-left: 122px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 77rem;
+}
+.secondPart{
+ display: flex;
+ justify-content: space-between;
+ width: 22rem;
+}
+.secondPart h2{
+  font-size: 100px;
+    line-height: normal;
+    margin-right: 27px;
+    /* font-weight: 700; */
+    margin-top: 28px;
+    margin-bottom: 30px;
+    /* font-size: 97px; */
+    /* text-align: center; */
+    /* margin-left: 100px; */
+    color: #222;
+    line-height: normal;
+}
+.create h3{
+  text-align: start;
+}
+.create p{
+  width: 18rem;
+  text-align: start;
+  color: #6f6f6f;
+  font-size: 19px;
+}
+#build{
+  width: 16rem;
+}
+.starBubble{
+  background: url(./portalbg1.svg);
+  background-size: 100%;
+  margin-top:33px;
+}
+.number{
+  color: white;
+}
+.numbe{
+  margin-left: 40px;
+  font-size: 40px;
+  position: relative;
+  padding-top: 10px;
+  font-weight: 700;
+  line-height: normal;
+}
+.explain{
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.starBubble1{
+  background: url(./portalbg2.svg);
+  background-size: 100%;
+}
+.numbe span{
+  
+  font-size: 31px;
+}
+.starBubble2{
+  background: url(./portalbg2.svg);
+  background-size: 100%;
+} 
+.textNote{
+  background-color: #fafafa;
+    padding: 55px 0 95px;
+}
+.textNote h3{
+  font-size: 30px;
+  margin-left: 111px;
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+  width: 82rem;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.image{
+  display: flex;
+    align-items: center;
+}
+.infoma h4{
+  font-size: 25px;
+}
+.infoma p{
+  width: 277px;
+  color: #6f6f6f;
+  line-height: 25px;
+  font-weight: 400;
+}
+.infoma:hover{
+  color:rgb(14, 151, 151)
+}
+.containe{
+  background: url(./wattpad-wall.png);
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+
+}
+.take{
+  color: white;
+    text-align: center;
+        padding-top: 108px;
+            font-size: 22px;
+}
+#buttons{
+  margin-top: 72px;
+    margin-left: 26rem;
+    margin-bottom: 100px
+}
+.btn-start-reading{
+  margin-left: 7rem;
+    color: white;
+    background: #ff5500;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    border: none;
+    /* border-radius: 6px; */
+    border-radius: 7px;
+    font-size: 18px;
+    
+}
+#start-writing{
+  margin-left: 33px;
+}
