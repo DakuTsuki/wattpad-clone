@@ -2,6 +2,9 @@ body{
   padding: 0;
   margin: 0;
   font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #131212;
+  color:#fbf2f2;
+  width: 100%;
 }
 header{
   display:flex;
@@ -11,77 +14,205 @@ header{
 }
 .wattpad-logo{
   margin-top: 14px;
-  margin-left: 86px;
+  margin-left: 61px;
 }
 .wattpad-logo img{
-  width:119px;
+  padding-top: 15px;
+  width: 155px;
  }.wattpad-header-list ul{
   display: flex;
   justify-content: space-between;
-  width: 22rem;
+  width: 53rem;
   align-items: center;
 }
 .wattpad-header-list li{
   list-style: none;
 }
-.wattpad-header-list select{
-  border: none;
-  width: 188px;
-  font-size: 16px;
-  margin-left: 11px;
-  font-weight:bold;
-}
 .wattpad-header-list #Browse{
   border: none;
   width: 96px;
 }
-.wattpad-header-list #community{
-  width: 111px;
-} 
-/* .Browse{
-  
+.wattpad-header-list #oppurtunities{
+  width: 253px;
 }
-.drop-down{
-  display: none;
-}
-.Browse:hover +.drop-down{
-  display:grid;
-} */
 input{
+  padding-bottom: 10px;
   border: none;
-    /* font-weight: 900; */
-    font-size: 17px;
-    outline: 0;
-    color: #222;
+  font-weight: 900;
+  font-size: 17px;
+  outline: 0;
+  padding-left: 27px;
+  padding-top: 10px;
+  color: #fbf2f2;
+  background: #131212;
 }
-.wattpad-header-list a{
-  text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
-    margin-left:29px;
+input::placeholder{
+  color: #fbf2f2;
 }
+input:focus{
+  border:1px groove #fbf2f2;
+  border-radius:18px;
+}
+.wattpad-header-list{
+  margin-top: -28px;
+      padding-top: 25px;
+}
+
 .wattpad-login{
-  position: absolute;
-  left: 79rem;
-  top: 14px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 11rem;
 }
 .wattpad-login a{
-  color: black;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   font-size: 17px;
+  transition:3s;
+}
+.wattpad-login a:hover{
+  transition: 4s;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  color: black;
+  background-color: #fafafa;
 }
 .wattpad-login select{
-
   border: none;
-  /* width: 188px; */
-  font-size: 17px;
-  margin-left: 11px;
-  font-weight: bold;
+  background: #131212;
+  color: white;
+  transition: 2s;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+.wattpad-login select:hover{
+  background: white;
+  color:black;
+  transition: 2s;
+  border:none;
+  outline:none;
+}
+.dropdown{
+  position:relative;
+  display:inline-block;
+  z-index: 99;
+  }
+  
+  .dropdown-btn{
+    /*padding: 10px; */
+    /* background: #333; */
+    /* color: #fff; */
+    cursor: pointer;
+    outline: none;
+    font-weight: 800;
+    border: none;
+    border-radius: 3px;
+    /* padding: 10px 27px; */
+    /* font-family: 'Saira Semi Condensed', sans-serif; */
+    font-size: 19px;
+  }
+  
+  .dropdown .dropdown-content{
+  display:block;
+  visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    position:absolute;
+  min-width:100px;
+  background:#fff;
+  padding:10px;
+ 	
+  }
+  
+  .dropdown:hover .dropdown-content{
+  visibility: visible;
+    opacity: 1;
+    background-color:#131212;
+    box-shadow:10px 8px 6px 1px rgba(48, 37, 37, 0.3);
+  }
+  
+  .dropdown-content a{
+  text-decoration:none;
+  margin: 10px 0;
+  display:block;
+  color: #fbf2f2;
+  font-size: 12px;
+  transition: 3s;
+  }
+  .dropdown-content a:hover{
+    text-decoration:none;
+    margin: 10px 0;
+    display:block;
+    color: white;
+    font-size: 18px;
+    background: black;
+
+    transition: 3s;
+    }
+  .dropdown .dropdown-content{
+    display:block;
+    -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+    .dropdown:hover .dropdown-content{
+      -webkit-transform: scale(1);
+        transform: scale(1);
+      }					
+  .dropdown-content::before {
+  position: absolute;
+  content: '';
+  border: 5px solid transparent;
+  z-index: 1;
+  bottom: 100%;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+  left: 25px;
+  }
+  #dropdown-btn1{
+    /* padding: 10px; */
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    /* padding: 10px 27px; */
+  /* font-family: 'Saira Semi Condensed',    sans-serif; */
+  font-size: 19px;
+  }
+  .dropdown #dropdown-content1{
+  display:block;
+  visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    position:absolute;
+  min-width:100px;
+  background:#fff;
+  padding:10px;
+ 	
+  }
+  .dropdown:hover #dropdown-content1{
+    visibility: visible;
+      opacity: 1;
+      background-color:#fafafa;
+      box-shadow:10px 8px 6px 1px rgba(48, 37, 37, 0.3);
+    }
+    .span{
+      margin-left: 10px;
+    }
+   
 #image{
  background-image: url(./topRightPortal.svg);
   background-repeat: no-repeat;
@@ -92,8 +223,11 @@ input{
 .wattpad-middle{
   display: flex;
   justify-content: space-between;
-  width: 88rem;
+  width: 84rem;
  
+}
+.wattpad-mid-flank{
+  width: 40rem;
 }
 .wattpad-mid-flank h2{
   margin-left: 7rem;
@@ -156,13 +290,13 @@ h2{
 .story h3{
   font-size: 1.5rem;
   font-weight: 700;
-  margin-left: 44rem
+  margin-left: 36rem
 }
 #item-container{
   margin-left: 12rem;
   display: flex;
   justify-content: space-between;
-  width: 64rem;
+  width: 60rem;
 }
 #item{
   display:flex;
@@ -173,11 +307,13 @@ h2{
   width: 32px;  
 }
 #item-container p{
+  text-align: center;
   font-weight: bold;
   font-size: 20px;
+  width: 17rem;
 }
 #puslished img{
-  margin-left:3rem;
+  margin-left:8rem;
 }
 .wattpadContents{
 display:flex;
@@ -208,7 +344,7 @@ width:38rem;
 .studioslogo p{
   width: 28rem;
   font-size: 19px;
-  color: #515050;
+  /* color: #515050; */
   font-family: DinRounded,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin-bottom: 13px;
 }
@@ -249,7 +385,7 @@ vertical-align: middle;
 .bookshelves p{
   width: 31rem;
   /* margin-left: 49rem; */
-  color: #5a5656;
+  /* color: #5a5656; */
   font-size: 22px;
 }
 #surroundings{
@@ -273,7 +409,7 @@ vertical-align: middle;
 .wattpadWorks{
   text-align: center;
   margin-top: 100px;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
 }
 .wattpadWorks h3{
   font-size: 24px;
@@ -281,7 +417,7 @@ vertical-align: middle;
 }
 #fact{
   display:flex;
-  margin-left: 122px;
+  margin-left: 63px;
 }
 .container{
   display: flex;
@@ -303,7 +439,7 @@ vertical-align: middle;
     /* font-size: 97px; */
     /* text-align: center; */
     /* margin-left: 100px; */
-    color: #222;
+    /* color: #222; */
     line-height: normal;
 }
 .create h3{
@@ -312,7 +448,7 @@ vertical-align: middle;
 .create p{
   width: 18rem;
   text-align: start;
-  color: #6f6f6f;
+  /* color: #6f6f6f; */
   font-size: 19px;
 }
 #build{
@@ -352,7 +488,7 @@ vertical-align: middle;
   background-size: 100%;
 } 
 .textNote{
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
     padding: 55px 0 95px;
 }
 .textNote h3{
@@ -362,8 +498,9 @@ vertical-align: middle;
 .links{
   display: flex;
   justify-content: space-between;
-  width: 82rem;
-  margin-left: 100px;
+  width: 78rem;
+  margin-bottom: 93px;
+  margin-left: 55px;
   margin-top: 100px;
 }
 .image{
@@ -375,7 +512,7 @@ vertical-align: middle;
 }
 .infoma p{
   width: 277px;
-  color: #6f6f6f;
+  /* color: #6f6f6f; */
   line-height: 25px;
   font-weight: 400;
 }
@@ -397,11 +534,11 @@ vertical-align: middle;
 }
 #buttons{
   margin-top: 72px;
-    margin-left: 26rem;
+    margin-left: 12rem;
     margin-bottom: 100px
 }
 .btn-start-reading{
-  margin-left: 7rem;
+  margin-left: 17rem;
     color: white;
     background: #ff5500;
     padding-left: 47px;
@@ -416,4 +553,8 @@ vertical-align: middle;
 }
 #start-writing{
   margin-left: 33px;
+}
+#imag img{
+  width: 55rem;
+  margin-left: 12rem;
 }

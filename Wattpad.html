@@ -15,62 +15,55 @@
       <div class="wattpad-logo">
         <img src="./wp-logo-orange.png" alt="Wattpad" />
       </div>
-      <div class="wattpad-header-list">
+      <div class="wattpad-header-list ">
         <ul>
           <li>
-            <select name="Writer's" id="">
-              <option value="Writer's oppurtunities">Browse</option>
-              <option value="Browse">Browse</option>
-              <option value="Paid-stories">Paid-stories</option>
-              <option value="The Wattys">The Wattys</option>
-              <option></option>
-              <option value="Adventure">Adventure</option>
-              <option value="Contemporary Lit">Contemporary Lit</option>
-              <option value="Diverse Lit">Diverse Lit</option>
-              <option value="Fanfiction">Fanfiction</option>
-            </select>
-          </li>
-          <!--     
-      <div class="Browse">Browse
-        <div class="drop-down">
-             <a href=".Paid-stories.html">Paid-stories</a>
-     <a href="Editor's picks.html">Editor's Picks</a>
-       <a href="The Wattys.html">The Wattys</a>   
-  <a href="Adventurenture</a>
-  <a href=" Contemporary Lit"> Contemporary Lit</a>
-             <a href="Diverse LitDiverse Lit.html">Diverse Lit</a>
-    <a href="Fanfiction.html">Fanfiction</a>
-    </div> -->
-
-          <li>
-            <select name="Writer's" id="">
-              <option value="Writer's oppurtunities">
-                Writer's oppurtunities
-              </option>
-              <option value="Writer Resources">Writer Resources</option>
-              <option value="Writer Programs">Writer Programs</option>
-              <option value="Writer Contests">Writer Contests</option>
-            </select>
+            <div class="dropdown">
+              <p class="dropdown-btn">Browses<span class="span">^</span></p>
+              <div class="dropdown-content">
+                <a href="#">Browse</a>
+                <a href="#">Paid-stories</a>
+                <a href="#">Adventure</a>
+                <a href="#">Contemporary Lit</a>
+                <a href="#">Diverse Lit</a>
+                <a href="#">Fanfiction</a>
+              </div>
+            </div>
           </li>
           <li>
-            <select name="Community" id="community">
-              <option value="Community">Community</option>
-              <option value="The Wattys">The Wattys</option>
-              <option value="Community Happenings">
-                Community Happenings
-              </option>
-              <option value="Wattpad Ambassadors">Wattpad Ambassadors</option>
-            </select>
+            <div class="dropdown">
+              <p class="dropdown-btn" id="oppurtunities"> Writer's oppurtunities<span class="span">^</span></p>
+              <div class="dropdown-content">
+                <a href="#">Writer Resources</a>
+                <a href="#">Writer Programs</a>
+                <a href="#">Writer Contests</a>
+              </div>
+            </div>
+          <li>
+            <div class="dropdown">
+              <p class="dropdown-btn" id="community">Community<span class="span">^</span></p>
+              <div class="dropdown-content">
+                <a href="#">The Wattys</a>
+                <a href="#">Community Happenings</a>
+                <a href="#">Wattpad Ambassadors</a>
+              </div>
+            </div>
           </li>
           <li class="input">
             <input type="text" placeholder="Seacrh...." />
           </li>
-        </ul>
+          </ul>
       </div>
+
+
+     
+    </div>
+
+    </div>
       <div class="wattpad-login">
         <a href="#">Log in</a>
         <select name="languages" id="">
-          <option value="English">Engilsh</option>
+     <option value="English">Engilsh</option>
         </select>
       </div>
     </div>
@@ -85,8 +78,8 @@
           writers through the power of story.
         </h4>
         <div class="buttons">
-          <button class="btn-start-reading">Start Reading</button>
-          <button class="btn-start-reading" id="start-writing">
+          <button class="btn-start-reading" onclick="onClickEvent()">Start Reading</button>
+          <button class="btn-start-reading" id="start-writing" onmouseover="onMouseOverEvent()">
             Start Writing
           </button>
         </div>
@@ -101,7 +94,7 @@
     <div class="story">
       <h3>See Your Story...</h3>
     </div>
-    <div id="item-container">
+    <<div id="item-container">
       <div class="item">
         <img src="./tv-icon.svg" alt="" />
         <p>Get produced to movie or film</p>
@@ -132,7 +125,7 @@
         <img id="gee" src="./hulu.svg" alt="" />
         <img id="cypher" src="./syfy.svg" alt="" />
       </div>
-    </div>
+   </div>
     <div class="wattpadContent-1">
       <div class="bookshelves">
         <img src="./wattpadStudiosLogo.svg" alt="" srcset="" />
@@ -148,12 +141,12 @@
         <img id="surroundings" src="./penguin.png" alt="" />
       </div>
 
-      <div class="booksPoster">
+     <div class="booksPoster">
         <img src="./wattpadBooksPoster.png" alt="" />
       </div>
     </div>
-    <div class="writers">
-      <p>Find out more about what we do for writers &RightArrow;</p>
+     <div class="writers">
+      <p onclick="clickOn()">Find out more about what we do for writers &RightArrow;</p>
     </div>
   </div>
 
@@ -236,12 +229,12 @@
   <div id="getDiscovered">
     <div class="textNote">
       <h3>Get Discovered</h3>
-    </div>
+   </div>
     <div class="links">
       <div class="deck1">
         <div class="image"><img src="./writing-contests.png" alt=""></div>
 
-        <div class="infoma">
+       <div class="infoma">
           <h4>Writing Contests</h4>
           <p>Enter writing contests to get published, win awards, and partner with global brands.</p>
         </div>
@@ -270,8 +263,8 @@
       <p>Read and write anywhere, even offline</p>
     </div>
     <div id="buttons">
-      <button class="btn-start-reading">Start Reading</button>
-      <button class="btn-start-reading" id="start-writing">
+      <button class="btn-start-reading" onclick="clicEven()">Start Reading</button>
+      <button class="btn-start-reading" id="start-writing" onmouseover="mouseEvent()">
         Start Writing
       </button>
     </div>
@@ -280,5 +273,23 @@
     </div>
   </div>
 </body>
+<script>
+  function onClickEvent() {
+    alert('Welcome Daku Tsuki')
+  }
+  function clickOn() {
+    alert('Lets Get Ready')
+  }
+  function clicEven() {
+    alert('Welcome Daku Tsuki')
+  }
+  function mouseEvent() {
+    alert('Lets Get Ready')
+  }
+  function onMouseOverEvent() {
+    alert('This is going to be a new adventure. We are happy to have you here')
+  }
+</script>
+
 
 </html>
